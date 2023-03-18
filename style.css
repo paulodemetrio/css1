@@ -1,0 +1,177 @@
+/* input:focus{
+    background-color: red;
+    color: yellow;
+} */
+
+/* link */
+a{
+    color:green;
+    text-decoration: none;
+}    
+
+/* alink */
+a:active{
+    color: yellow;
+}    
+
+/* vlink */
+a:visited{
+    color: brown;
+}    
+
+a:hover{
+    color: blue;
+}
+
+label:hover{
+    color: blue;
+}
+
+/* input:hover{
+    background-color: aqua;
+} */
+
+input:checked{
+    background-color: aqua;
+}
+
+ul li:first-child{
+    color: green;
+}
+
+/* O número dentro do parênteses se refere ao elemento dentro da lista */
+ul li:nth-child(2){
+    color:greenyellow;
+}
+ul li:nth-child(4){
+    color:greenyellow;
+}
+ul li:nth-child(6){
+    color:greenyellow;
+}
+
+ul li:last-child{
+    color:red;
+    cursor: pointer;
+}
+
+/* Mudar o ícone ao lado da lista */
+ul{
+    list-style-image: url('lista.png');
+}
+
+#frm-cadastro-pessoa input{
+    background-color:  yellow;
+}
+
+#frm-cadastro-pessoa input:focus{
+    color: black;
+}
+
+#frm-cadastro-pessoa input[type = text]::placeholder{
+    color: blue;
+}
+
+#frm-cadastro-pessoa input[type = email]::placeholder{
+    color: red;
+}
+
+#frm-cadastro-pessoa p::first-line{
+    color: red;
+}
+
+#frm-cadastro-pessoa p::first-letter{
+    font-size: 45px;
+    color: green;
+    font-weight: bold;
+    float: left;
+    position: sticky;
+}
+
+#frm-cadastro-pessoa p::selection{
+    background-color: yellow;
+    color: red;
+}
+
+#frm-cadastro-pessoa p .citacao::selection{
+    background-color: yellow;
+    color: red;
+}
+
+.citacao{
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.citacao::before{
+    content: open-quote;
+}
+
+.citacao::after{
+    content: close-quote;
+}
+
+.circulo{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin-inline: 10px;
+}
+
+/* 
+    *HTML* 
+        <div class="conteiner">
+        <div class="conteudo">
+          <div class="filho">     
+          </div>
+        </div>
+    </div>
+
+  *CSS*    
+        .conteiner{
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        padding: 10px;
+    }
+
+    .conteudo{
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        padding: 10px;
+    }
+
+    .filho{
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    } 
+*/
+
+/* Estilizando cadastro */
+
+.linha{
+    display: flex;
+}
+
+.descricaoform{
+    width: 10%;
+}
+
+.conteudoform{
+    width: 90%;
+}
+
+.descricaoObg{
+    width: 10%;
+}
+
+.descricaoObg::after{
+    content: "*";
+    color: red;
+}

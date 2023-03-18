@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!-- Desenvolver um cadastro com as seguintes configurações: 
+        Devem existir os campos: 
+        nome, sobrenome, email, data de nascimento, telefone, telefone secundario,
+        cpf, rg, estado civil, cidade nascimento, estado nascimento,
+        
+        Os campos obrigatórios são:
+        nome, sobrenome, data nascimento, cpf, rg, estado civil, cidade nascimento, estado nascimento
+
+        estilize para mostrar ao usuário quais os campos obrigatórios
+        sem que ele precise cadastrar para saber
+
+        Não deverá ser usado tabela, apenas css com divs
+
+        Obedecer os seguinte layout:
+        Nome      |______|
+        Sobrenome |______|
+        E-mail    |______|
+    -->
+
+    <form action="" method="post" class="formCadAtividade">
+        <div class="linha">
+            <div class="descricaoObg">
+                <label for="txtNome">Nome:</label>
+            </div>
+            <div class="conteudoform">
+                <input type="text" name="txtNome" id="Nome" required>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="descricaoform">
+                <label for="txtSobrenome">Sobrenome:</label>
+            </div>
+            <div class="conteudoform">
+                <input type="text" name="txtSobrenome" id="txtSobrenome">
+            </div>
+        </div>
+        <div class="linha">
+            <div class="descricaoform">
+                <label for="txtData">Data de nascimento:</label>
+            </div>
+            <div class="conteudoform">
+                <input type="date" name="txtData" id="txtData">
+            </div>
+        </div>
+        <div class="linha">
+            <div class="descricaoObg">
+                <label for="txtEmail">E-mail:</label>
+            </div>
+            <div class="conteudoform">
+                <input type="email" name="txtEmail" id="txtEmail" required>
+            </div>
+        </div>
+        <div class="linha">
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Cancelar">
+        </div>
+    </form>
+</body>
+</html>
